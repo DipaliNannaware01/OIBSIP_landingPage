@@ -1,0 +1,509 @@
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+.main{
+    
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("images/photo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    margin-bottom: 29px;
+ }
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+   
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20PX;
+    transition: .5s;
+    text-transform: capitalize;
+    
+}
+a:hover{
+    color: rgb(190, 10, 151);
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: century;
+}
+.float-container{
+    position: relative;
+    transition: transform 0.5s;
+}
+.float-container:hover{
+    transform: translateY(-10px);
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/* CSSS for navbar section */
+
+.logo{
+    position: absolute;
+     width: 25%;
+      height: auto;
+      left: 0px; 
+}
+.menu{
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #00093c, #572653);
+    padding: -200rem 1%;
+    
+} 
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.form{
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 400px;
+    height: auto;
+    color: white;
+    font-family: 'roboto',sans-serif;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.heading{
+    opacity: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+.heading:hover{
+    color: rgb(190, 10, 151);
+   
+}
+input
+    {
+    opacity: 0;
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15Px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+
+input::placeholder{
+    color:white;
+}
+input:focus{
+    background: #fff;
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    opacity: 0;
+
+    width: 70%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15Px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+.submit-btn:hover{
+    color: white;
+    background-color: rgb(190, 10, 151);
+}
+.link{
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 30px auto;
+}
+.link:hover{
+    color: #fff;
+}
+
+.welcome-text{
+    position: absolute;
+    margin: 10%;
+    text-align: center;
+    margin-left: 20px;
+    text-shadow: 4000cm;
+   
+}
+.welcome-text h1{
+    text-align: center;
+    color: rgb(190, 10, 151);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: century;
+}
+
+.welcome-text p{
+color: #fff;
+font-family: century;
+
+}
+
+
+/* card session start */
+
+
+.slider{
+    max-width: 1300px;
+    display: flex;
+  }
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+  }
+  .slider .card .img{
+    height: 200px;
+    width: 100%;
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(148, 7, 117);
+    line-height: 20px;
+    font-family: century;
+  }
+  .card .content p{
+    text-align: justify;
+    margin: 10px 0;
+    font-family: century;
+  }
+  .card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .card .content .btn button{
+    background: rgb(148, 7, 117);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .card .content .btn button:hover{
+    transform: scale(0.9);
+  }
+
+  .categories{
+    padding: 9% 0;
+}
+
+.box-3{
+    width: 29%;
+    height: 29%;
+    float: left;
+    margin: 2%;
+}
+
+/*  about session start form here */
+.about{
+    background-color:linear-gradient(to right, #00093c, #572653);
+}
+.about h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+.about img{
+    width: 200px;
+    margin-left: 25px;
+    margin-top: -250px;
+    
+}
+.about p{
+    text-align: right;
+    margin-left: 310px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    padding: 10px;
+   
+   font-family: century;
+}
+.about span{
+    color:rgb(148, 7, 117);
+    font-size: 3.5rem; 
+}
+.line{
+    color: black;
+    
+}
+
+.gallry1 h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+.gallry1 span{
+    color: rgb(148, 7, 117);
+    font-size: 3.5rem;
+}
+
+/*  about session end form here */
+
+/*  footer start form here */
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 5;
+    background: linear-gradient(to right, #00093c, #572653);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 115px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+.logo1{
+    width: 250px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    transition: .5s;
+    text-transform: capitalize;
+}
+.col h3:hover{
+    color: gray;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+  .social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: capitalize;
+
+} 
+
+
+.social-icons .fab:hover{
+    color: rgb(95, 8, 76);
+    transform: rotate(360deg);
+    transition: 1s ease;
+} 
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+    transition: .5s;
+    text-transform: capitalize;
+}
+.copyright:hover{
+    color: grey;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+/*  footer end form here */
